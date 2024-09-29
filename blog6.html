@@ -1,0 +1,4 @@
+# blog/views.py
+def home(request):
+    posts = Post.objects.all()
+    return render(request, 'home.html', {'posts': posts})
